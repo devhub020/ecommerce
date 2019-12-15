@@ -1,0 +1,36 @@
+$navbar-brand-font-size: 2rem;
+$nav-link-font-size: 1.6rem;
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+
+    z-index: 999;
+}
+.navbar {
+    height: 6.4rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+	align-items: center;
+	justify-content: space-between;
+
+	&__brand {
+		font-size: $navbar-brand-font-size;
+		text-transform: uppercase;
+	}
+
+	.nav__link {
+		font-size: $nav-link-font-size;
+	}
+	.nav__links {
+		display: flex;
+
+		.nav__item {
+			margin: 0 2.4rem;
+		}
+	}
+}

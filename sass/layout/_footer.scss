@@ -1,0 +1,29 @@
+$footer-item-title-font-size: 2rem;
+$footer-item-description-font-size: 1.4rem;
+$footer-copyright-font-size: 1.6rem;
+
+.footer{
+    padding: 2rem 0;
+    &__item{
+        &--title{
+            font-size: $footer-item-title-font-size;
+            font-weight: 300;
+            margin: 2rem 0;
+        }
+        &--description{
+            font-size: $footer-item-description-font-size;
+            margin: 1.4rem 0;
+        }
+    }
+    &__social-icons{
+        display: flex;
+        img{
+            margin: 1rem 2rem 0 0;
+        }
+    }
+    &-copyright-text{
+        margin: 6.4rem 0 0.5rem;
+        text-align: center;
+        font-size: $footer-copyright-font-size;
+    }
+}
