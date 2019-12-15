@@ -1,6 +1,6 @@
 @font-face{
     font-family: Sweet;
-    src: url('../../fonts/SweetSans.ttf');
+    src: url('../fonts/SweetSans.ttf');
 }
 
 *{
@@ -27,6 +27,7 @@ html{
 .container{
     margin: auto;
     width: 90%;
+    max-width: 1200px;
 }
 section{
     margin: 6.4rem 0 3rem;

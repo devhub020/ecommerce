@@ -13,14 +13,23 @@
 <body>
     <header class="header">
         <nav class="navbar container">
-            <a href="#" class="navbar__brand">
+            <a href="./" class="navbar__brand">
                 <h1>store</h1>
             </a>
 
             <div class="navbar__nav">
                 <ul class="nav__links">
                     <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+                    <li class="nav__item">
+                        <div class="dropdown">
+                            <a href="#" class="nav__link dropbtn">Shop</a>
+                            <div class="dropdown-content">
+                              <a class="nav__link" href="./wishlist.html">Wishlist</a>
+                              <a class="nav__link" href="./shopcomplete.html">Checkout</a>
+                            </div>
+                          </div>
+                        
+                        </li>
                     <li class="nav__item"><a href="#" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
                 </ul>
@@ -172,7 +181,7 @@
                 </div>
 
                 <div class="col-md-3 col-sm-2 footer__item">
-                    <h4 class="footer__item--title">NEWS</h4>
+                    <h4 class="footer__item--title">News</h4>
                     <ul>
                         <li class="footer__item--description"><a href="#">Blog</a></li>
                         <li  class="footer__item--description"><a href="#">

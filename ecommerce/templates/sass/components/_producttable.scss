@@ -1,0 +1,36 @@
+$table-head-font-size:1.6rem;
+$table-body-font-size:1.4rem;
+
+.product-table{
+    width: 100%;
+    padding: 3rem 0;
+    &--head{
+        padding: 2rem 1rem;
+        background-color: #eeeeee;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        p{
+            font-size: $table-head-font-size;
+        }
+    }
+
+    &--body{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        align-items: center;
+        margin: 2rem 0;
+        p{
+            margin: 0.5rem;
+            font-size: $table-head-font-size;
+        }
+        .product{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        img{
+            width: 100px;
+
+        }
+    }
+}

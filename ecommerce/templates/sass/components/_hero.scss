@@ -1,0 +1,28 @@
+$hero-title-font-size: 2rem;
+$hero-sitemap-font-size: 1.6rem;
+.hero {
+	&__container {
+        background: url('../images/cover-img-1.jpg')center fixed;
+        
+		width: 100%;
+		height: 50vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__text--wrapper {
+		display: flex;
+        flex-direction: column;
+        
+    }
+    &__text--title{
+        text-align: center;
+        font-size: $hero-title-font-size;
+        margin: 1rem 0;
+    }
+    &__text--sitemap{
+
+        font-size: $hero-sitemap-font-size;
+    }
+}
