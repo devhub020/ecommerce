@@ -25,6 +25,11 @@ html {
   letter-spacing: 1px;
 }
 
+.container {
+  margin: auto;
+  width: 90%;
+}
+
 section {
   margin: 6.4rem 0 3rem;
 }
