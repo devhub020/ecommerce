@@ -1,5 +1,5 @@
 $navbar-brand-font-size: 2rem;
-$nav-link-font-size: 1.6rem;
+
 
 .header{
     position: fixed;
@@ -21,7 +21,11 @@ $nav-link-font-size: 1.6rem;
 		font-size: $navbar-brand-font-size;
 		text-transform: uppercase;
 	}
-
+	&__nav{
+		@include mediaSm{
+			display: none;
+		}
+	}
 	.nav__link {
 		font-size: $nav-link-font-size;
 	}
@@ -30,6 +34,22 @@ $nav-link-font-size: 1.6rem;
 
 		.nav__item {
 			margin: 0 2.4rem;
+		}
+
+		
+	}
+
+	&__toggler{
+		display: none;
+		background: none;
+		.bar{
+			width: 3.2rem;
+			height: 1px;
+			border: 1px solid black;
+			margin: 0.5rem;
+		}
+		@include mediaSm{
+			display: block;
 		}
 	}
 }

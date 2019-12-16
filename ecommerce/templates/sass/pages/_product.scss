@@ -6,3 +6,11 @@
         font-size: 2rem;
     }
 }
+
+.product-detail{
+    .img-wrapper{
+        img{
+            max-height: 400px;
+        }
+    }
+}

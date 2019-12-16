@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./sass/main.css">
 </head>
 
@@ -49,28 +47,73 @@
         <section class="hero">
             <div class="hero__container">
                 <div class="hero__text-wrapper">
-                    <h2 class="hero__text--title">ORDER COMPLETE
-                    </h2>
-                    <p class="hero__text--sitemap"><span>Home ></span>Shoppipng Cart >&nbsp;Checkout</p>
+                    <h2 class="hero__text--title">SHOP</h2>
+                    <p class="hero__text--sitemap"><span>Home ></span>&nbsp;Product >&nbsp;Product Detail</p>
                 </div>
             </div>
 
         </section>
-        <section class="shop-complete">
 
+        <section class="product-detail">
 
-            <div class="container d-flex flex-column align-items-center justify-content-center mb-5">
-                <img src="./images/shoppingcart.png" alt="cart">
-                <h2 class="mt-5">Thank you for purchasing, Your order is complete</h2>
-                <div class="d-flex mt-4">
-                    <a href="./" class="btn">Home</a>
-                    <a href="./" class="btn">Continue Shoppipng</a>
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="img-wrapper">
+                            <img class="w-100" src="./images/item-14.jpg" alt="product" />
+                        </div>
+                    </div>
+
+                    <div class="offset-md-2 col-md-6 col-sm-12 mt-5">
+                        <h2>Product name</h2>
+
+                        <h4 class="my-5">$100.0</h4>
+
+                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                            unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
+                            decided to leave for the far World of Grammar.</p>
+                        <button class="btn ml-0 mt-5">Add to cart</button>
+                    </div>
                 </div>
+                <div class="tab">
+
+                    <button class="btn tablinks" id="defaultTab"
+                        onclick="openTab(event, 'description')">Description</button>
+
+                    <button class="btn tablinks" onclick="openTab(event, 'manufact')">Manufacturer</button>
+                </div>
+
+                <!-- Tab content -->
+
+                <div id="description" class="tabcontent">
+                    <p>
+                        Even the all-powerful Pointing has no control about the blind texts it is an almost
+                        unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
+                        decided to leave for the far World of Grammar.
+
+                        When she reached the first hills of the Italic Mountains, she had a last view back on the
+                        skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of
+                        her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she
+                        continued her way.
+                    </p>
+                </div>
+
+                <div id="manufact" class="tabcontent">
+                    <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
+                        unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
+                        decided to leave for the far World of Grammar.
+
+                        When she reached the first hills of the Italic Mountains, she had a last view back on the
+                        skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of
+                        her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she
+                        continued her way.
+                    </p>
+                </div>
+                <!-- Tab panes -->
+
             </div>
         </section>
-
     </main>
-
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -122,6 +165,30 @@
             </p>
         </div>
     </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        document.getElementById("defaultTab").click();
+        function openTab(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 
 </html>

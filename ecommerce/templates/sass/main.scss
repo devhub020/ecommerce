@@ -1,9 +1,8 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
 
 @import 'base/reset';
 @import 'base/typography';
-
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
 
 @import 'layout/navbar';
 @import 'layout/grid';
@@ -17,8 +16,9 @@
 @import 'components/producttable';
 @import 'components/hero';
 @import 'components/dropdown';
+@import 'components/navtabs';
 
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/contact';
-@import 'pages/shop';
+@import 'pages/product';
